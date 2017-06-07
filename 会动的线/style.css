@@ -1,0 +1,6 @@
+div{
+    width: 0;
+    border: 1px solid;
+    transition: width 0.5s;
+    transition-timing-function: linear;
+}
