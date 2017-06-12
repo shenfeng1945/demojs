@@ -66,7 +66,6 @@ button.onclick = function(){
         var n = queue.shift()
         n && n.call() //如果n存在，则判断后面的并执行，若n为假，则直接返回false
     },500)
-
 }
 //将频繁使用的API封装成函数
 function create(element,classname,textcontent){
