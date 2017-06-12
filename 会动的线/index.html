@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<div></div>
+<div id="one"></div>
+<div id="two"></div>
 <script>
-    var coco = document.getElementsByTagName('div');
-    div = coco[0];
-    var width = 0;
+    var coco = document.getElementsByTagName('div')
+    var div = coco[0]
+    var width = 0
+    var height = 0
+    var div2 = coco[1]
     var lu = setInterval(function () {
-        width = width + 10;
-        div.style.width = (width + '') ;//转化为字符串
+        width = width + 20
+        height = height + 30
+        div.style.width = (width + 'px') //转化为字符串
+        div2.style.height = height + 'px'
         if(width > 300){
             window.clearInterval(lu)
         }
-    },500)
+    },300)
 </script>
 </body>
 </html>

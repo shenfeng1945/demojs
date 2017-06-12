@@ -1,6 +1,12 @@
-div{
+#one{
     width: 0;
     border: 1px solid;
-    transition: width 0.5s;
+    transition: width 0.3s;
+    transition-timing-function: linear;
+}
+#two{
+    width: 2px;
+    background: red;
+    transition: height 0.3s;
     transition-timing-function: linear;
 }
