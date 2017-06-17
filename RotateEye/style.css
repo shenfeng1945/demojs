@@ -1,0 +1,70 @@
+.parent{
+    width: 150px;
+    height: 80px;
+    border: 1px solid;
+    background: white;
+    border-radius: 50%;
+    margin: 100px auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.child{
+    width: 70px;
+    height: 70px;
+    background: #7d1204;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .8s;
+
+}
+.child .one{
+    font-size: 45px;
+    font-family: monospace;
+    position: absolute;
+    transform: rotateX(180deg) rotateY(180deg);
+
+}
+.child .two{
+    font-size: 45px;
+    font-family: monospace;
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    transform: rotateZ(-60deg);
+}
+.child .three{
+    font-size: 45px;
+    font-family: monospace;
+    position: absolute;
+    transform: rotateZ(60deg);
+    left: 10px;
+    top: 25px;
+
+}
+.child::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid;
+    left: 15px;
+    top: 15px;
+    transform: translateZ(5px);
+}
+.child::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background: black;
+    top: 30px;
+    left: 30px;
+    transform: translateZ(10px);
+}
