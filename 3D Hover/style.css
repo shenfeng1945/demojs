@@ -1,0 +1,28 @@
+*{
+    margin: 0px;padding: 0px;
+}
+.parent{
+    width: 100px;
+    padding: 10px 30px;
+    border: 1px solid;
+    perspective: 1000px;
+    margin: 50px auto auto auto;
+
+}
+.child{
+    height: 60px;
+    background: blue;
+    transition: transform .2s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: yellow;
+    transform: translateZ(10px);
+}
