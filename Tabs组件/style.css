@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #e2ded2;
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
+.out {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    max-width: 460px;
+    background: repeating-linear-gradient( -45deg, #D7D3C7, #D7D3C7 2px, #CECABE 2px, #CECABE 4px);
+    border-radius: 5px;
+}
+.out::after{
+    content: '';
+    display: block;
+    border: 1px solid rgba(0,0,0,.3);
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border-radius: 5px;
+    z-index: -1;
+}
+.out>.container>.tabs {
+    border: 1px solid;
+    display: flex;
+    border-bottom: none;
+    background: linear-gradient(to bottom, #e5dfd3 0%, #d0c9b8 100%);
+}
+.out>.container>.tabs li {
+    flex-grow: 1;
+    padding: 20px;
+}
+.out>.container>.tabs li.active {
+    background: #F0EDE6;
+}
+.out>.container>.tabs-content {
+    border: 1px solid;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    background: #F0EDE6;
+    border-top: none;
+}
+.out>.container>.tabs-content li {
+    display: none;
+}
+.out>.container>.tabs-content li.active {
+    display: block;
+    font-size: 25px;
+}
+.out>.container>.tabs-content li .circle {
+    width: 80px;
+    height: 80px;
+    background: #DFDCD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
