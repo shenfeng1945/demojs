@@ -1,0 +1,1 @@
+低仿[Apple-like Slideshow](http://demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/demo.html)

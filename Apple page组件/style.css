@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration-line:  none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+}
+body {
+    background: #F2F2F2;
+}
+.heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.heading h1 {
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+}
+.heading h1:first-child {
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+.heading>div {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+}
+li {
+    list-style: none;
+}
+.slides {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgba(192,192,192,.5);
+    border-radius: 3px;
+    box-shadow: 0 0 1px #c0c0c0;
+}
+.slides .window {
+    overflow: hidden;
+}
+.slides .window ol {
+    display: flex;
+    padding-left: 0;
+    height: 400px;
+    transition: transform .5s;
+}
+.slides .window ol li {
+    width: 100%;
+    flex-shrink: 0;
+}
+.slides .panes {
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ececec 100%);
+    border-top: 1px solid rgba(192,192,192,.5);
+}
+.slides .panes ol {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ececec 100%);
+
+}
+.slides .panes ol li {
+    width: 60px;
+    height: 45px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-left: 1px solid rgba(192,192,192,.5);
+    border-right: 1px solid rgba(192,192,192,.5);
+}
+.slides .panes ol li.active {
+    cursor: unset;
+    position: relative;
+    background: radial-gradient(#fff,#ccc,#999);
+}
+.slides .panes ol li.active::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.foot {
+    text-align: center;
+    margin-top: 15px;
+}
+.foot div {
+    padding: 10px;
+}
+.foot .one {
+    font-size: 13px;
+}
+.foot .two {
+    font-size: 10px;
+}
