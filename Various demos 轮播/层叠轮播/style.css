@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.slides{
+    margin: 40px auto auto auto;
+    max-width: 400px;
+
+}
+.slides .windows{
+    border: 1px solid;
+    position: relative;
+}
+.slides .windows ol{
+    display: flex;
+    transition: transform .5s;
+    min-height: 300px;
+
+}
+.slides .windows ol li{
+    width: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    display: none;
+}
+.slides .windows ol li.active:first-child{
+    display: block;
+    color: red;
+}
+.slides .windows ol li.active:nth-child(2){
+    display: block;
+    color: orange;
+}
+.slides .windows ol li.active:nth-child(3){
+    display: block;
+    color: blue;
+}
+.slides .windows ol li.active:nth-child(4){
+    display: block;
+    color: green;
+}
+.slides .controls ol{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+.slides .controls ol li{
+    margin: 10px;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background: black;
+    color: white;
+}
+.slides .controls ol li.active{
+    background: red;
+}
