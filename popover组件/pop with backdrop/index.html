@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pop width backdrop</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .popover{min-width: 200px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+        .onclick{border: 1px solid;text-align: center;cursor: pointer;border-radius: 5px;vertical-align: middle;padding: 2px;z-index: 1;}
+        .onclick:hover{background: rgba(0,0,0,.2);}
+        .pop{border: 1px solid;position: absolute;left: 50%;transform: translateX(-50%);min-width: 300px;margin-top: 15px;text-align: center;
+            padding: 5px;display: none;background: white;}
+        .popover.active .pop{display: block;}
+        .popover.active .pop::before{content: '';display: block;position: absolute;top: -12px;left: 50%;width: 0;height: 0;
+            border-left: 10px solid transparent;border-right: 10px solid transparent;border-bottom: 12px solid black;}
+        .popover.active .pop::after{content: '';display: block;position: absolute;top: -11px;left: 50%;width: 0;height: 0;
+            border-left: 10px solid transparent;border-right: 10px solid transparent;border-bottom: 12px solid white;}
+        .popover.active + .background{position: fixed;width: 100%;height: 100%;z-index: -1;background: rgba(0,0,0,.4);}
+    </style>
+</head>
+<body>
+<div class="popover">
+    <div class="onclick">pop width backdrop</div>
+    <div class="pop">WebUI Popover Demo</div>
+</div>
+<div class="background"></div>
+</body>
+<script>
+    //不要把close和open放在$('.popover')监听事件的函数里，如果放在里面，每点击一次'pop with backdrop'，
+    //会生成新的close和open函数，那么取消‘document’监听的close函数，并不是原来的那个close函数(只是名字相同而已)。
+    let close = function() {
+        $('.popover').removeClass('active')
+        $(document).off('click', close)
+    }
+    let open = function() {
+        $('.popover').addClass('active')
+        $(document).on('click', close)
+    }
+    $('.popover').on('click', '.onclick', function(e) {
+        let $button = $(e.currentTarget)
+        let $parent = $button.parent()
+        e.stopPropagation()
+        if ($parent.hasClass('active')) {
+            close()
+        } else {
+            open()
+        }
+    })
+    //防止点击'pop'会消失
+    $('.pop').on('click', function(e) {e.stopPropagation()})
+</script>
+</html>
