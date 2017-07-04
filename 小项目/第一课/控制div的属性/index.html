@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制div的属性</title>
+</head>
+<style>
+    .wrapper{max-width:300px;margin-left:auto;margin-right:auto;text-align: center;}
+    .change{width:100px;height: 100px;background: #000;margin-top: 10px;margin-left:auto;margin-right:auto;}
+    .changewidth.active ~ .change{width: 200px;}
+    .changeheight.active ~ .change{height: 200px;}
+    .changecolor.active ~ .change{background: red;}
+    .hide.active ~ .change{display: none;}
+</style>
+<body>
+<div class="wrapper">
+    <button class="changewidth">变宽</button>
+    <button class="changeheight">变高</button>
+    <button class="changecolor">变色</button>
+    <button class="hide">隐藏</button>
+    <button class="reset">重置</button>
+    <div class="change"></div>
+</div>
+</body>
+<script>
+    let buttons = document.querySelectorAll('button')
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            buttons[i].classList.add('active')
+            if (i === buttons.length - 1) {
+                for (let j = 0; j < buttons.length - 1; j++) {
+                    buttons[j].classList.remove('active')
+                }
+            }
+        })
+    }
+</script>
+</html>
