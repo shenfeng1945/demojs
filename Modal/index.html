@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="open">open modal</div>
+<div class="modal">
+    <div class="x">×</div>
+    <h2>New message to @mdo</h2>
+    <hr>
+    <form action="https://www.baidu.com" method="get">
+        <div>
+            <span>name</span>
+            <input type="text" name='name'>
+        </div>
+        <div></div>
+        <span>password</span>
+        <input type="text" name='password'>
+        <button class=login>登录</button>
+    </form>
+    <button class=close>关闭</button>
+</div>
+<script>
+    $('.modal .x').on('click', function() {
+        $('.modal').removeClass('active')
+        console.log('x')
+    })
+    $('.modal .close').on('click', function() {
+        $('.modal').removeClass('active')
+        console.log('close')
+    })
+
+    $('.open').on('click', function(e) {
+        let $button = $(e.currentTarget)
+        let $borther = $button.next()
+        if ($borther.hasClass('active')) {
+            $borther.removeClass('active')
+        } else {
+            $borther.addClass('active')
+        }
+    })
+</script>
+</body>
+</html>

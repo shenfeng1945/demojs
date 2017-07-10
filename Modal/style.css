@@ -1,0 +1,38 @@
+.open{
+    border:1px solid;
+    max-width:100px;
+    user-select: none;
+    cursor: default;
+}
+.modal{
+    width:600px;
+    border:1px solid;
+    border-radius:5px;
+    position: relative;
+    margin:100px auto;
+    text-align:center;
+    display: none;
+
+}
+.modal.active{
+    display: block;
+
+}
+.modal .x{
+    position: absolute;
+    right:.8em;
+    top:.5em;
+    font-size:18px;
+    width:15px;
+    height:15px;
+    vertical-align:middle;
+    cursor: default;
+}
+.modal .x:hover{
+    color: red;
+}
+.login{
+    display: block;
+    position: absolute;
+    right:0;
+}
