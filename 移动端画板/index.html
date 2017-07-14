@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>移动端在线画板</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="instrument">
+      <p>工具</p>
+      <label><input type="radio" name="penType" value="pen" checked>铅笔</label>
+      <label><input type="radio" name="penType" value="eraser">橡皮檫</label>
+      <label><input type="radio" name="penType" value="clear" class="clear">清空</label>
+      <label><input type="radio" name="penType" value="squareness" class='squareness'>矩形</label>
+      <label><input type="radio" name="penType" value="triangle" class="triangle">三角形</label>
+      <label><input type="radio" name="penType" value="circle" class="circle">圆</label>
+    </div>
+    <hr>
+    <div class="selector-line">
+      <p>线宽</p>
+      <label><input type="radio" name="line" value="thin" checked>细线</label>
+      <label><input type="radio" name="line" value="middle">中等线</label>
+      <label><input type="radio" name="line" value="wide">粗线</label>
+    </div>
+    <hr>
+    <div class="selector-color">
+      <p>颜色</p>
+      <label><input type="radio" name="color" value="black" checked>黑<img src="https://i.loli.net/2017/07/14/59689bf90727b.png" width=15></label>
+      <label><input type="radio" name="color" value="red">红<img src="https://i.loli.net/2017/07/14/59689c4a2e577.png" width=15></label>
+      <label><input type="radio" name="color" value="green">绿<img src="https://i.loli.net/2017/07/14/59689c939dd5a.png" width=15></label>
+      <label><input type="radio" name="color" value="blue">蓝<img src="https://i.loli.net/2017/07/14/59689d5c7012a.png" width=15></label>
+    </div>
+    <div class=save>
+       <button id=save>保存</button>
+    </div>
+   
+  </div> 
+  <canvas id="myCanvas"></canvas>
+</body>
+<script src="./main.js"></script>
+</html>

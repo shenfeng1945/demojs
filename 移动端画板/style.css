@@ -1,0 +1,32 @@
+*{margin:0;padding:0;}
+body{
+  overflow:hidden;
+  font-size:0.0426667rem;
+}
+p{
+  text-align:center;
+  font-size:0.05333rem;
+  font-weight:bold;
+}
+canvas{
+  border: 2px solid green;
+  position: absolute;
+  bottom:0;
+}
+.nav{
+  position: absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:1;
+}
+.nav .instrument{
+  margin-top:0.053333rem;
+}
+label{
+    font-size:0.048rem;margin: 0.01rem 0;
+    display: block;
+    font-size:0.048rem;
+}
+.save{text-align:center;}
+.save #save{padding:0.013334rem 0.02667rem;}
