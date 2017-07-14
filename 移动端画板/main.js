@@ -5,10 +5,7 @@
        myCanvas.width = clientWidth*0.8
        myCanvas.height = clientHeight*0.99
   let canvas = document.getElementById('myCanvas')
-  
- 
   document.write(`<style>html{font-size:${clientWidth}px}</style>`)
- 
   let previousPoint
     if (canvas.getContext) {
          let context = canvas.getContext('2d')
@@ -137,7 +134,6 @@
           let pageY = touch.pageY
           let penType = document.querySelector('input[name="penType"]:checked').value
           
-           
             //控制颜色
           let color = document.querySelector('input[name="color"]:checked').value
           let strokeColor = function(){
@@ -169,8 +165,6 @@
           context.lineTo(startTriangle.pageX,startTriangle.pageY)
           context.stroke()
           }
-          
-          
         })
       })
       //圆
@@ -189,7 +183,6 @@
           let pageY = touch.pageY
           let penType = document.querySelector('input[name="penType"]:checked').value
           
-           
            //控制颜色
           let color = document.querySelector('input[name="color"]:checked').value
           let strokeColor = function(){
@@ -222,18 +215,11 @@
           }
         })
       })
-      
-      //save
-     
-  
- 
+   //save
    save.onclick = function(){
       var canvas = document.getElementById("myCanvas")
       var Date = canvas.toDataURL("image/png");
       var newWindow = window.open('about:blank','image from canvas');
       newWindow.document.write("<img src='"+Date+"' alt='from canvas'/>");
-      
    }
-  
-     
     }
