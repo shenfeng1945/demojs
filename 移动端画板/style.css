@@ -28,5 +28,9 @@ label{
     display: block;
     font-size:0.048rem;
 }
+label > input{
+  width: 0.034667rem;
+  height:0.034667rem;
+}
 .save{text-align:center;}
-.save #save{padding:0.013334rem 0.02667rem;}
+.save #save{padding:0.013334rem 0.02667rem;font-size:0.03733rem;}

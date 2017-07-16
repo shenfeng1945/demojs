@@ -6,6 +6,11 @@
        myCanvas.height = clientHeight*0.99
   let canvas = document.getElementById('myCanvas')
   document.write(`<style>html{font-size:${clientWidth}px}</style>`)
+  //让图片的大小能适应不同像素的移动端
+  let imgWidth = document.querySelectorAll('img')
+  for(var i=0;i<imgWidth.length;i++){
+    imgWidth[i].width = 15/375*clientWidth
+  }
   let previousPoint
     if (canvas.getContext) {
          let context = canvas.getContext('2d')
