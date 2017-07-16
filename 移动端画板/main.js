@@ -5,10 +5,12 @@
        myCanvas.width = clientWidth*0.8
        myCanvas.height = clientHeight*0.99
   let canvas = document.getElementById('myCanvas')
+  //可以把一个字缩小1/10，那么原先有rem单位的数组全部乘以10
   document.write(`<style>html{font-size:${clientWidth}px}</style>`)
   //让图片的大小能适应不同像素的移动端
   let imgWidth = document.querySelectorAll('img')
   for(var i=0;i<imgWidth.length;i++){
+    //因为是以宽375px的手机作为设计稿
     imgWidth[i].width = 15/375*clientWidth
   }
   let previousPoint
@@ -19,7 +21,7 @@
          e.preventDefault()
            //这句话得放在touchmove事件里面
         let penType = document.querySelector('input[name="penType"]:checked').value
-        //这段代码放在外面，可行吗？
+        //每个touch事件里都要写这个代码，太麻烦了，应该可以优化的
         let color = document.querySelector('input[name="color"]:checked').value
         let strokeColor = function(){
             let b
@@ -33,15 +35,16 @@
         let line = document.querySelector('input[name="line"]:checked').value
         let lineWidth = function(){
         let a
-        if(line === 'thin'){a=1}
-        else if(line === 'middle'){a=3}
-        else if(line === 'wide'){a=5}
+        if(line === 'thin'){a=1*clientWidth/375}
+        else if(line === 'middle'){a=3*clientWidth/375}
+        else if(line === 'wide'){a=5*clientWidth/375}
         return a
         }
         let touch = e.touches[0]
         let pageX = touch.pageX  
         let pageY = touch.pageY
           //铅笔
+ //貌似相同name的另一个input被点击时，其value并没有变，但在touch事件(3个)里却可以检测改变的value,这是该代码的核心点
            if(penType === 'pen'){
              if(previousPoint){
              context.beginPath()
@@ -100,9 +103,9 @@
             let line = document.querySelector('input[name="line"]:checked').value
             let lineWidth = function(){
             let a
-            if(line === 'thin'){a=1}
-            else if(line === 'middle'){a=3}
-            else if(line === 'wide'){a=5}
+            if(line === 'thin'){a=1*clientWidth/375}
+            else if(line === 'middle'){a=3*clientWidth/375}
+            else if(line === 'wide'){a=5*clientWidth/375}
             return a
             }
             
@@ -154,9 +157,9 @@
           let line = document.querySelector('input[name="line"]:checked').value
           let lineWidth = function(){
           let a
-          if(line === 'thin'){a=1}
-          else if(line === 'middle'){a=3}
-          else if(line === 'wide'){a=5}
+          if(line === 'thin'){a=1*clientWidth/375}
+          else if(line === 'middle'){a=3*clientWidth/375}
+          else if(line === 'wide'){a=5*clientWidth/375}
           return a
           }
           
@@ -203,9 +206,9 @@
           let line = document.querySelector('input[name="line"]:checked').value
           let lineWidth = function(){
           let a
-          if(line === 'thin'){a=1}
-          else if(line === 'middle'){a=3}
-          else if(line === 'wide'){a=5}
+          if(line === 'thin'){a=1*clientwidht/375}
+          else if(line === 'middle'){a=3*clientWidth/375}
+          else if(line === 'wide'){a=5*clientWidth/375}
           return a
           }
           
