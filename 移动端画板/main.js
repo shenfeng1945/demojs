@@ -1,9 +1,9 @@
   //自动获取移动端页面的宽和高，并将宽和高设置给canvas。
   let {clientWidth,clientHeight} =  document.documentElement
-  
   let navWidth = document.querySelector('.nav').clientWidth
-       myCanvas.width = clientWidth*0.8
-       myCanvas.height = clientHeight*0.99
+  console.log(navWidth)
+       myCanvas.width = clientWidth*0.8213
+       myCanvas.height = clientHeight
   let canvas = document.getElementById('myCanvas')
   //可以把一个字缩小1/10，那么原先有rem单位的数组全部乘以10
   document.write(`<style>html{font-size:${clientWidth}px}</style>`)
@@ -206,7 +206,7 @@
           let line = document.querySelector('input[name="line"]:checked').value
           let lineWidth = function(){
           let a
-          if(line === 'thin'){a=1*clientwidht/375}
+          if(line === 'thin'){a=1*clientWidth/375}
           else if(line === 'middle'){a=3*clientWidth/375}
           else if(line === 'wide'){a=5*clientWidth/375}
           return a

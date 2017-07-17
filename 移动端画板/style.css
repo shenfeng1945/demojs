@@ -9,9 +9,10 @@ p{
   font-weight:bold;
 }
 canvas{
-  border: 2px solid green;
+  /*border: 2px solid green;*/
   position: absolute;
   bottom:0;
+  background: rgba(0,0,0,.2);
 }
 .nav{
   position: absolute;
@@ -19,6 +20,7 @@ canvas{
   top:50%;
   transform:translateY(-50%);
   z-index:1;
+ background: white;
 }
 .nav .instrument{
   margin-top:0.053333rem;
