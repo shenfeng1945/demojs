@@ -208,7 +208,7 @@
        .news-hero-nav .news-hero .show-hero div a>span>span{color:#d1ab57;font-size:14px;}
        .news-hero-nav .news-hero .show-hero div a:hover>span{display:flex;}
 
-       .news-hero-nav .news-hero .prompt{display:flex;margin-top:25px;}
+       .news-hero-nav .news-hero .prompt {display:flex;margin-top:25px;}
        .news-hero-nav .news-hero .prompt i{width:70px;height:70px;display:block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -330px -90px;}
        .news-hero-nav .news-hero .prompt .words{margin-top:10px;margin-left:10px;}
        .news-hero-nav .news-hero .prompt .words h5{color:rgb(64,64,64);font-size:14px;}
