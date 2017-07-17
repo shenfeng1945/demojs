@@ -1,7 +1,6 @@
   //自动获取移动端页面的宽和高，并将宽和高设置给canvas。
   let {clientWidth,clientHeight} =  document.documentElement
   let navWidth = document.querySelector('.nav').clientWidth
-  console.log(navWidth)
        myCanvas.width = clientWidth*0.8213
        myCanvas.height = clientHeight
   let canvas = document.getElementById('myCanvas')
