@@ -1,9 +1,9 @@
-         *{margin:0;padding:0;box-sizing:border-box;}
-         *::after,*::before{box-sizing:border-box;}
+       *{margin:0;padding:0;box-sizing:border-box;}
+       *::after,*::before{box-sizing:border-box;}
         ul,ol{list-style:none;}
         body{font-size:12px;}
-        a{color:black;text-decoration:none;}
-        .page{background:#f6f6f6;}
+       a{color:black;text-decoration:none;}
+       .page{background:#f6f6f6;}
         /*topbar*/
         .top-wrapper{background:#000;position:relative;color:white;}
         .topbar{width:1240px;margin:0 auto;display:flex;}
@@ -42,6 +42,7 @@
         .topbar>.logo{width:190px;height:100px;position:absolute;top:0;
             background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -30px ;z-index:2;}
        /*banner-thead*/
+
         .banner-wrapper{padding-top:0.1px;color:white;}
         .banner-wrapper>video.big{position:absolute;width:100%;min-height:400px;}
         .banner{width:1240px;margin: 40px auto 0 auto;min-height:490px;position:relative;}
@@ -77,6 +78,7 @@
         .tabs-content-first .activity-and-download .slides{width:820px;} 
         .tabs-content-first .activity-and-download .slides .slides-windows{width:820px;height:350px;overflow:hidden;} 
         .tabs-content-first .activity-and-download .slides .slides-windows ol{display:flex;transition:transform .5s}
+        .tabs-content-first .activity-and-download .slides .slides-windows ol li{}
         .tabs-content-first .activity-and-download .slides .slides-windows ol li img{width:820px;height:350px;}
         .tabs-content-first .activity-and-download .slides .controls ul{display: flex;background:#121112;}
         .tabs-content-first .activity-and-download .slides .controls ul li{font-size:14px;color:white;line-height:50px;flex-grow:1;text-align:center;}
@@ -117,6 +119,7 @@
        .news-hero-nav .news-nav .news-general.active{display:block;}
        .news-hero-nav .news-nav .news-general ul .first a{display:flex;}
        .news-hero-nav .news-nav .news-general ul .first a img{margin-right:20px;}
+       .news-hero-nav .news-nav .news-general ul .first a div{}
        .news-hero-nav .news-nav .news-general ul .first a div h1{font-size:36px;}
        .news-hero-nav .news-nav .news-general .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
        .news-hero-nav .news-nav .news-general ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
@@ -154,6 +157,7 @@
        .news-hero-nav .news-nav .news-forum.active{display:block;}
        .news-hero-nav .news-nav .news-forum ul .first a{display:flex;}
        .news-hero-nav .news-nav .news-forum ul .first a img{margin-right:20px;}
+       .news-hero-nav .news-nav .news-forum ul .first a div{}
        .news-hero-nav .news-nav .news-forum ul .first a div h1{font-size:36px;}
        .news-hero-nav .news-nav .news-forum ul .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
        .news-hero-nav .news-nav .news-forum ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
@@ -204,6 +208,7 @@
        .news-hero-nav .news-hero .show-hero div a>span>span{color:#d1ab57;font-size:14px;}
        .news-hero-nav .news-hero .show-hero div a:hover>span{display:flex;}
 
+       .news-hero-nav .news-hero .prompt{display:flex;margin-top:25px;}
        .news-hero-nav .news-hero .prompt i{width:70px;height:70px;display:block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -330px -90px;}
        .news-hero-nav .news-hero .prompt .words{margin-top:10px;margin-left:10px;}
        .news-hero-nav .news-hero .prompt .words h5{color:rgb(64,64,64);font-size:14px;}
@@ -216,6 +221,7 @@
        .tabs-content-first .recommend .touch-recommend ul li{width:150px;text-align:center;cursor:pointer;font-size:16px;color:#666;}
        .tabs-content-first .recommend .touch-recommend ul li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
 
+
        .tabs-content-first .recommend .video{display:flex;justify-content:space-between;display:none}
        .tabs-content-first .recommend .video.active{display:flex;}
        .tabs-content-first .recommend .video >div{width:190px;position:relative;}
@@ -227,6 +233,7 @@
        .tabs-content-first .recommend .video >div a span{display:flex;position:absolute;width:100%;height:70.51%;top:0;left:0;justify-content:center;align-items:center;display:none;background:rgba(0,0,0,.4);} 
        .tabs-content-first .recommend .video >div h5{font-size:14px;font-weight:normal;color:#555;}
        .tabs-content-first .recommend .video >div a:hover >span{display:flex;}
+
 
        .tabs-content-first .recommend .activity{display:flex;justify-content:space-between;display:none;}
        .tabs-content-first .recommend .activity.active{display:flex;}
