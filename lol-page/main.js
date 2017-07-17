@@ -7,17 +7,24 @@ $('.menu-content .tabs-name').on('click','li',function(e){
 })
 
 //slides轮播
+//储存mouseenter事件里的index
+let array = {}
 $('.activity-and-download .slides .controls>ul').on('mouseenter','li',function(e){
    let $li = $(e.currentTarget)
    let index = $li.index()
    go(index)
+   array = {"index":index}
 })
 let  current = 0
 setInterval(function(){
     let nextcurrent = current +1
     if(nextcurrent === 5){nextcurrent=0}
+    //如果mouseenter被触发，改变下一张图片播放的位置
+    if(array.index !== undefined){nextcurrent = array.index + 1}
     go(nextcurrent)
     current = nextcurrent
+    //消除3s后的setInterval影响,同时再次去储存mouseenter里的index值
+    array.index = undefined
 },3000)
 let go = function(index){
   let width = $('.activity-and-download .slides .slides-windows').width()
