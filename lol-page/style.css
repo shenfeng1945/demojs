@@ -1,280 +1,280 @@
-       *{margin:0;padding:0;box-sizing:border-box;}
-       *::after,*::before{box-sizing:border-box;}
-        ul,ol{list-style:none;}
-        body{font-size:12px;}
-       a{color:black;text-decoration:none;}
-       .page{background:#f6f6f6;}
-        /*topbar*/
-        .top-wrapper{background:#000;position:relative;color:white;}
-        .topbar{width:1240px;margin:0 auto;display:flex;}
-        .topbar .globalNavigation{margin-left:190px;}
-        .topbar .globalNavigation .menu{display:flex;}
-        .topbar .globalNavigation .menu li {font-size:18px;line-height:1;width:120px;padding-top:30px;text-align:center;}
-        .topvar .globalNavigation .menu li a{text-decoration:none;}
-        .topbar .globalNavigation .menu li span {display:block;}
-        .topbar .globalNavigation .menu li small {font-size:12px;text-transform: uppercase;color:#838383;}
-        .topbar .globalNavigation .menu-popover{
-            position: absolute;width:100%;background:rgba(0,0,0,.7);top:100%;left:0;display:none;z-index:2;}
-        .topbar .globalNavigation:hover .menu-popover{display:block;}
-        .topbar .globalNavigation .menu-popover ul{width:1240px;margin:0 auto;padding-left:190px;padding-top:20px;display:flex;padding-bottom:1.5em;}
-        .topbar .globalNavigation .menu-popover ul li{text-align:center;}
-        .topbar .globalNavigation .menu-popover ul li a{display:block;width:120px;font-size:14px;color:white;text-decoration:none;line-height:2;}
-        .topbar .globalNavigation .menu-popover ul li a:hover{color:#dbb465;}
-        .topbar .icons{display:flex;margin-top:25px;margin-left:10px;}
-        .topbar .globalNavigation .menu-popover ul li a>.icon{width:14px;height:14px;display:inline-block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png);vertical-align:middle;}
-        .topbar .globalNavigation .menu-popover ul li a>.icon-hot{background-position: -107px 0;}
-        .topbar .globalNavigation .menu-popover ul li a>.icon-star{background-position: -129px 0;}
-        .topbar .icons .search{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -8px 0;width:27px;height:27px;}
-        .topbar .icons .mobile{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -45px 0;width:21px;height:27px;
-                               margin-left:20px;margin-right:8px;}
-        .topbar .userNavigation {display:flex;position:relative;width:350px;z-index:1;}
-        .topbar .userNavigation:hover{background:rgba(27,27,27,.9);}
-        .topbar .userNavigation .avatar{padding:4px;margin:8px 20px;
-            width:74px;height:74px;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -170px ;  }
-        .topbar .userNavigation .avatar>img{position:relative;z-index:-1;border-radius:50%;}
-        .topbar .userNavigation .text{padding-top:18px;}
-        .topbar .userNavigation .text p{font-size:16px;}
-        .topbar .userNavigation .text small{font-size:12px;}
-        .topbar .userNavigation .user-popover{position:absolute;width:100%;top:100%;left:0;display:none;;background:rgba(27,27,27,.9);text-align:center;padding-top:20px;}
-        .topbar .userNavigation:hover .user-popover{display:block;}
-        .topbar .userNavigation .user-popover>p{font-size:14px;padding:10px 30px 30px 30px;color:#868686;}
-        .topbar .userNavigation .user-popover>a{color:white;background:#161413;display:block;line-height:36px;text-decoration: none;}
-        .topbar>.logo{width:190px;height:100px;position:absolute;top:0;
-            background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -30px ;z-index:2;}
-       /*banner-thead*/
+*{margin:0;padding:0;box-sizing:border-box;}
+*::after,*::before{box-sizing:border-box;}
+ul,ol{list-style:none;}
+body{font-size:12px;}
+a{color:black;text-decoration:none;}
+.page{background:#f6f6f6;}
+/*topbar*/
+.top-wrapper{background:#000;position:relative;color:white;}
+.topbar{width:1240px;margin:0 auto;display:flex;}
+.topbar .globalNavigation{margin-left:200px;}
+.topbar .globalNavigation .menu{display:flex;}
+.topbar .globalNavigation .menu li {font-size:18px;line-height:1;width:120px;padding-top:30px;text-align:center;}
+.topvar .globalNavigation .menu li a{text-decoration:none;}
+.topbar .globalNavigation .menu li span {display:block;}
+.topbar .globalNavigation .menu li small {font-size:12px;text-transform: uppercase;color:#838383;}
+.topbar .globalNavigation .menu-popover{
+       position: absolute;width:100%;background:rgba(0,0,0,.7);top:100%;left:0;display:none;z-index:2;}
+.topbar .globalNavigation:hover .menu-popover{display:block;}
+.topbar .globalNavigation .menu-popover ul{width:1240px;margin:0 auto;padding-left:190px;padding-top:20px;display:flex;padding-bottom:1.5em;}
+.topbar .globalNavigation .menu-popover ul li{text-align:center;}
+.topbar .globalNavigation .menu-popover ul li a{display:block;width:120px;font-size:14px;color:white;text-decoration:none;line-height:2;}
+.topbar .globalNavigation .menu-popover ul li a:hover{color:#dbb465;}
+.topbar .icons{display:flex;margin-top:25px;margin-left:10px;}
+.topbar .globalNavigation .menu-popover ul li a>.icon{width:14px;height:14px;display:inline-block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png);vertical-align:middle;}
+.topbar .globalNavigation .menu-popover ul li a>.icon-hot{background-position: -107px 0;}
+.topbar .globalNavigation .menu-popover ul li a>.icon-star{background-position: -129px 0;}
+.topbar .icons .search{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -8px 0;width:27px;height:27px;}
+.topbar .icons .mobile{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -45px 0;width:21px;height:27px;
+                          margin-left:20px;margin-right:8px;}
+.topbar .userNavigation {display:flex;position:relative;width:350px;z-index:1;}
+.topbar .userNavigation:hover{background:rgba(27,27,27,.9);}
+.topbar .userNavigation .avatar{padding:4px;margin:8px 20px;
+         width:74px;height:74px;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -170px ;  }
+.topbar .userNavigation .avatar>img{position:relative;z-index:-1;border-radius:50%;}
+.topbar .userNavigation .text{padding-top:18px;}
+.topbar .userNavigation .text p{font-size:16px;}
+.topbar .userNavigation .text small{font-size:12px;}
+.topbar .userNavigation .user-popover{position:absolute;width:100%;top:100%;left:0;display:none;;background:rgba(27,27,27,.9);text-align:center;padding-top:20px;}
+.topbar .userNavigation:hover .user-popover{display:block;}
+.topbar .userNavigation .user-popover>p{font-size:14px;padding:10px 30px 30px 30px;color:#868686;}
+.topbar .userNavigation .user-popover>a{color:white;background:#161413;display:block;line-height:36px;text-decoration: none;}
+.topbar>.logo{width:190px;height:100px;position:absolute;top:5%;
+    background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -30px ;z-index:2;}
+  /*banner-thead*/
 
-        .banner-wrapper{padding-top:0.1px;color:white;}
-        .banner-wrapper>video.big{position:absolute;width:100%;min-height:400px;}
-        .banner{width:1240px;margin: 40px auto 0 auto;min-height:490px;position:relative;}
-        .banner .introduce h2{font-size:45px;background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
-            -webkit-background-clip: text;-webkit-text-fill-color: transparent;margin-bottom:10px;}
-        .banner .introduce p{line-height:1.5;margin-bottom:15px;color:#c0c0c0;font-size:14px;}
-        .banner .introduce .video-wrapper{position:relative;width:220px;height:120px;cursor:pointer;}
-        .banner .introduce .video-wrapper .icon-play{width:35px;height:50px;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -230px -30px;
-                                                     position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
-        .banner .introduce .check-detail{width:155px;height:36px;border:2px solid;display:block;text-decoration:none;font-size:14px;
-            font-weight:bold;color:#c89b3c;line-height:36px;text-align:center;margin-top:15px;border-image: linear-gradient(to bottom, #6b5024 0%, #b88d35 100%);
-            border-image-slice: 1;}
-        .banner .introduce .check-version{position:absolute;bottom:130px;right:0;display: flex;}
-        .banner .introduce .check-version .content-version{margin-right:10px;}
-        .banner .introduce .check-version .what-version{color:#888787;font-size:14px;}
-        .banner .introduce .check-version .version{color: #f5d185;font-size:16px;}
-        .banner .introduce .check-version a{text-decoration:none;display:block;font-size:14px;font-weight:bold;color:#c89b3c;border:2px solid;line-height:1.5;padding:0 15px;text-align:center;
-                                               background:#000;border-image: linear-gradient(to bottom, #6b5024 0%, #b88d35 100%);border-image-slice: 1;}
+.banner-wrapper{padding-top:0.1px;color:white;}
+.banner-wrapper>video.big{position:absolute;width:100%;min-height:400px;}
+.banner{width:1240px;margin: 40px auto 0 auto;min-height:490px;position:relative;}
+.banner .introduce h2{font-size:45px;background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+    -webkit-background-clip: text;-webkit-text-fill-color: transparent;margin-bottom:10px;}
+.banner .introduce p{line-height:1.5;margin-bottom:15px;color:#c0c0c0;font-size:14px;}
+.banner .introduce .video-wrapper{position:relative;width:220px;height:120px;cursor:pointer;}
+.banner .introduce .video-wrapper .icon-play{width:35px;height:50px;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -230px -30px;
+                                             position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+.banner .introduce .check-detail{width:155px;height:36px;border:2px solid;display:block;text-decoration:none;font-size:14px;
+    font-weight:bold;color:#c89b3c;line-height:36px;text-align:center;margin-top:15px;border-image: linear-gradient(to bottom, #6b5024 0%, #b88d35 100%);
+    border-image-slice: 1;}
+.banner .introduce .check-version{position:absolute;bottom:130px;right:0;display: flex;}
+.banner .introduce .check-version .content-version{margin-right:10px;}
+.banner .introduce .check-version .what-version{color:#888787;font-size:14px;}
+.banner .introduce .check-version .version{color: #f5d185;font-size:16px;}
+.banner .introduce .check-version a{text-decoration:none;display:block;font-size:14px;font-weight:bold;color:#c89b3c;border:2px solid;line-height:1.5;padding:0 15px;text-align:center;
+                                       background:#000;border-image: linear-gradient(to bottom, #6b5024 0%, #b88d35 100%);border-image-slice: 1;}
 
-        /*swiper*/
-        .menu-content{position:relative;z-index:1;margin-top:-120px;}
-        .menu-content .tabs-name-wrapper{box-shadow:0 4px 4px rgba(0,0,0,.2);background: linear-gradient(to bottom,#fff,#f3f3f3);height:60px;position:relative;z-index:1;}
-        .menu-content .tabs-name-wrapper.sticky{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:3;width:100%;}
-        .menu-content .placeholder{height:60px;background:#f7f7f7;}
-        .menu-content .tabs-name{width:1240px;background:white;margin: 0 auto;display:flex;background: linear-gradient(to bottom,#fff,#f3f3f3);}
-        .menu-content .tabs-name li{width:110px;line-height:58px;font-size:20px;cursor:pointer;text-align:center;margin-right:50px;}
-        .menu-content .tabs-name li.active{color:#d1ab57;border-bottom:2px solid #d1ab57;}
-        .menu-content .tabs-content{width:1240px;margin:0 auto;}
-        .tabs-content-wrapper{background:#f7f7f7;}
-        .tabs-content-first{width:1240px;margin-left:auto;margin-right:auto;display:none;}
-        .tabs-content-first.active{display:block;}
-        .tabs-content-first .activity-and-download {display: flex;padding-top:40px;background:#f4f4f4;margin-bottom:60px;} 
-        .tabs-content-first .activity-and-download .slides{width:820px;} 
-        .tabs-content-first .activity-and-download .slides .slides-windows{width:820px;height:350px;overflow:hidden;} 
-        .tabs-content-first .activity-and-download .slides .slides-windows ol{display:flex;transition:transform .5s}
-        .tabs-content-first .activity-and-download .slides .slides-windows ol li{}
-        .tabs-content-first .activity-and-download .slides .slides-windows ol li img{width:820px;height:350px;}
-        .tabs-content-first .activity-and-download .slides .controls ul{display: flex;background:#121112;}
-        .tabs-content-first .activity-and-download .slides .controls ul li{font-size:14px;color:white;line-height:50px;flex-grow:1;text-align:center;}
-        .tabs-content-first .activity-and-download .slides .controls ul li a{color:#c8c8c8;}
-        .tabs-content-first .activity-and-download .slides .controls ul li.active {background:#303030;}
-        .tabs-content-first .activity-and-download .slides .controls ul li.active a{color:#e9a542;}
-        .tabs-content-first .activity-and-download .nav-right{margin-left:20px;position:relative;}
-        .tabs-content-first .activity-and-download .nav-right .download-nav a{margin-left:20px;position:absolute;width:100%;top:0;height:150px;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav{display:flex;flex-wrap:wrap;margin-top:15px;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons{width:130px;text-align:center;line-height:55px;font-size:14px;background:white;margin:1.5px;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons a{width:130px;display:block;position:relative;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons:hover{background:#f0f0f0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .icon{display:inline-block;width:30px;height:30px;background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat;vertical-align:middle;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .first{background-position:-200px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .second{background-position:-560px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .third{background-position:-590px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .fourth{background-position:-380px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .fifth{background-position:-650px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .sixth{background-position:-290px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .seventh{background-position:-620px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .eighth{background-position:-260px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .ninth{background-position:-470px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .tenth{background-position:-500px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .eleventh{background-position:-410px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icons .twelfth{background-position:-440px 0;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icon-hot{width:14px;height:14px;display:inline-block;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -107px 0;position:absolute;top:2px;}
-        .tabs-content-first .activity-and-download .nav-right .icons-nav .icon-star{width:14px;height:14px;display:inline-block;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -129px 0;position:absolute;top:2px;}
+  /*swiper*/
+.menu-content{position:relative;z-index:1;margin-top:-120px;}
+.menu-content .tabs-name-wrapper{box-shadow:0 4px 4px rgba(0,0,0,.2);background: linear-gradient(to bottom,#fff,#f3f3f3);height:60px;position:relative;z-index:1;}
+.menu-content .tabs-name-wrapper.sticky{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:3;width:100%;}
+.menu-content .placeholder{height:60px;background:#f7f7f7;}
+.menu-content .tabs-name{width:1240px;background:white;margin: 0 auto;display:flex;background: linear-gradient(to bottom,#fff,#f3f3f3);}
+.menu-content .tabs-name li{width:110px;line-height:58px;font-size:20px;cursor:pointer;text-align:center;margin-right:50px;}
+.menu-content .tabs-name li.active{color:#d1ab57;border-bottom:2px solid #d1ab57;}
+.menu-content .tabs-content{width:1240px;margin:0 auto;}
+.tabs-content-wrapper{background:#f7f7f7;}
+.tabs-content-first{width:1240px;margin-left:auto;margin-right:auto;display:none;}
+.tabs-content-first.active{display:block;}
+.tabs-content-first .activity-and-download {display: flex;padding-top:40px;background:#f4f4f4;margin-bottom:60px;} 
+.tabs-content-first .activity-and-download .slides{width:820px;} 
+.tabs-content-first .activity-and-download .slides .slides-windows{width:820px;height:350px;overflow:hidden;} 
+.tabs-content-first .activity-and-download .slides .slides-windows ol{display:flex;transition:transform .5s}
+.tabs-content-first .activity-and-download .slides .slides-windows ol li{}
+.tabs-content-first .activity-and-download .slides .slides-windows ol li img{width:820px;height:350px;}
+.tabs-content-first .activity-and-download .slides .controls ul{display: flex;background:#121112;}
+.tabs-content-first .activity-and-download .slides .controls ul li{font-size:14px;color:white;line-height:50px;flex-grow:1;text-align:center;}
+.tabs-content-first .activity-and-download .slides .controls ul li a{color:#c8c8c8;}
+.tabs-content-first .activity-and-download .slides .controls ul li.active {background:#303030;}
+.tabs-content-first .activity-and-download .slides .controls ul li.active a{color:#e9a542;}
+.tabs-content-first .activity-and-download .nav-right{margin-left:20px;position:relative;}
+.tabs-content-first .activity-and-download .nav-right .download-nav a{margin-left:20px;position:absolute;width:100%;top:0;height:150px;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav{display:flex;flex-wrap:wrap;margin-top:15px;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons{width:130px;text-align:center;line-height:55px;font-size:14px;background:white;margin:1.5px;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons a{width:130px;display:block;position:relative;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons:hover{background:#f0f0f0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .icon{display:inline-block;width:30px;height:30px;background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat;vertical-align:middle;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .first{background-position:-200px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .second{background-position:-560px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .third{background-position:-590px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .fourth{background-position:-380px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .fifth{background-position:-650px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .sixth{background-position:-290px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .seventh{background-position:-620px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .eighth{background-position:-260px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .ninth{background-position:-470px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .tenth{background-position:-500px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .eleventh{background-position:-410px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icons .twelfth{background-position:-440px 0;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icon-hot{width:14px;height:14px;display:inline-block;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -107px 0;position:absolute;top:2px;}
+.tabs-content-first .activity-and-download .nav-right .icons-nav .icon-star{width:14px;height:14px;display:inline-block;background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -129px 0;position:absolute;top:2px;}
 
-       /*最新资讯及英雄皮肤*/
-       .news-hero-nav{display:flex;}
-       .news-hero-nav .news-nav{position:relative;}
-       .news-hero-nav .news-nav .touch-information{display:flex;border-bottom:2px solid #dedede;}
-       .news-hero-nav .news-nav .touch-information h3{font-size:26px;margin-right:40px;}
-       .news-hero-nav .news-nav .touch-information ol{display:flex;}
-       .news-hero-nav .news-nav .touch-information ol li{font-size:18px;width:168px;text-align:center;display:flex;justify-content:center;align-items:center;height:36px;margin-top:14px;cursor:pointer;}
-       .news-hero-nav .news-nav .touch-information ol li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
-       .news-hero-nav .news-nav .news-general{width:820px;margin-top:25px;display:none;}
-       .news-hero-nav .news-nav .news-general.active{display:block;}
-       .news-hero-nav .news-nav .news-general ul .first a{display:flex;}
-       .news-hero-nav .news-nav .news-general ul .first a img{margin-right:20px;}
-       .news-hero-nav .news-nav .news-general ul .first a div{}
-       .news-hero-nav .news-nav .news-general ul .first a div h1{font-size:36px;}
-       .news-hero-nav .news-nav .news-general .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
-       .news-hero-nav .news-nav .news-general ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
-       .news-hero-nav .news-nav .news-general ul .other a:hover span:first-child{background:#d1ab57;color:white;}
-       .news-hero-nav .news-nav .news-general ul .other a:hover p{color:#d1ab57;} 
-       .news-hero-nav .news-nav .news-general ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
-       .news-hero-nav .news-nav .news-general ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
-       .news-hero-nav .news-nav .news-general ul .other a span:last-child{color:#bababa;}
-     /*.news-public*/
-       .news-hero-nav .news-nav .news-public{width:820px;margin-top:25px;display:none;}
-       .news-hero-nav .news-nav .news-public.active{display:block;}
-       .news-hero-nav .news-nav .news-public ul .first a{display:flex;}
-       .news-hero-nav .news-nav .news-public ul .first a img{margin-right:20px;}
-       .news-hero-nav .news-nav .news-public ul .first a div h1{font-size:36px;}
-       .news-hero-nav .news-nav .news-public ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
-       .news-hero-nav .news-nav .news-public ul .other a:hover span:first-child{background:#d1ab57;color:white;}
-       .news-hero-nav .news-nav .news-public ul .other a:hover p{color:#d1ab57;} 
-       .news-hero-nav .news-nav .news-public ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
-       .news-hero-nav .news-nav .news-public ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
-       .news-hero-nav .news-nav .news-public ul .other a span:last-child{color:#bababa;}
-        /*nesw-match*/
-       .news-hero-nav .news-nav .news-match{width:820px;margin-top:25px;display:none;}
-       .news-hero-nav .news-nav .news-match.active{display:block;}
-       .news-hero-nav .news-nav .news-match ul .first a{display:flex;}
-       .news-hero-nav .news-nav .news-match ul .first a img{margin-right:20px;}
-       .news-hero-nav .news-nav .news-match ul .first a div h1{font-size:36px;}
-       .news-hero-nav .news-nav .news-match ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
-       .news-hero-nav .news-nav .news-match ul .other a:hover span:first-child{background:#d1ab57;color:white;}
-       .news-hero-nav .news-nav .news-match ul .other a:hover p{color:#d1ab57;} 
-       .news-hero-nav .news-nav .news-match ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
-       .news-hero-nav .news-nav .news-match ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
-       .news-hero-nav .news-nav .news-match ul .other a span:last-child{color:#bababa;}
-        /*news-forum*/
-       .news-hero-nav .news-nav .news-forum{width:820px;margin-top:25px;display:none;}
-       .news-hero-nav .news-nav .news-forum.active{display:block;}
-       .news-hero-nav .news-nav .news-forum ul .first a{display:flex;}
-       .news-hero-nav .news-nav .news-forum ul .first a img{margin-right:20px;}
-       .news-hero-nav .news-nav .news-forum ul .first a div{}
-       .news-hero-nav .news-nav .news-forum ul .first a div h1{font-size:36px;}
-       .news-hero-nav .news-nav .news-forum ul .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
-       .news-hero-nav .news-nav .news-forum ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
-       .news-hero-nav .news-nav .news-forum ul .other a:hover span:first-child{background:#d1ab57;color:white;}
-       .news-hero-nav .news-nav .news-forum ul .other a:hover p{color:#d1ab57;} 
-       .news-hero-nav .news-nav .news-forum ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
-       .news-hero-nav .news-nav .news-forum ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
-       .news-hero-nav .news-nav .news-forum ul .other a span:last-child{color:#bababa;}
+  /*最新资讯及英雄皮肤*/
+.news-hero-nav{display:flex;}
+.news-hero-nav .news-nav{position:relative;}
+.news-hero-nav .news-nav .touch-information{display:flex;border-bottom:2px solid #dedede;}
+.news-hero-nav .news-nav .touch-information h3{font-size:26px;margin-right:40px;}
+.news-hero-nav .news-nav .touch-information ol{display:flex;}
+.news-hero-nav .news-nav .touch-information ol li{font-size:18px;width:168px;text-align:center;display:flex;justify-content:center;align-items:center;height:36px;margin-top:14px;cursor:pointer;}
+.news-hero-nav .news-nav .touch-information ol li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
+.news-hero-nav .news-nav .news-general{width:820px;margin-top:25px;display:none;}
+.news-hero-nav .news-nav .news-general.active{display:block;}
+.news-hero-nav .news-nav .news-general ul .first a{display:flex;}
+.news-hero-nav .news-nav .news-general ul .first a img{margin-right:20px;}
+.news-hero-nav .news-nav .news-general ul .first a div{}
+.news-hero-nav .news-nav .news-general ul .first a div h1{font-size:36px;}
+.news-hero-nav .news-nav .news-general .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
+.news-hero-nav .news-nav .news-general ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
+.news-hero-nav .news-nav .news-general ul .other a:hover span:first-child{background:#d1ab57;color:white;}
+.news-hero-nav .news-nav .news-general ul .other a:hover p{color:#d1ab57;} 
+.news-hero-nav .news-nav .news-general ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
+.news-hero-nav .news-nav .news-general ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
+.news-hero-nav .news-nav .news-general ul .other a span:last-child{color:#bababa;}
+  /*.news-public*/
+.news-hero-nav .news-nav .news-public{width:820px;margin-top:25px;display:none;}
+.news-hero-nav .news-nav .news-public.active{display:block;}
+.news-hero-nav .news-nav .news-public ul .first a{display:flex;}
+.news-hero-nav .news-nav .news-public ul .first a img{margin-right:20px;}
+.news-hero-nav .news-nav .news-public ul .first a div h1{font-size:36px;}
+.news-hero-nav .news-nav .news-public ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
+.news-hero-nav .news-nav .news-public ul .other a:hover span:first-child{background:#d1ab57;color:white;}
+.news-hero-nav .news-nav .news-public ul .other a:hover p{color:#d1ab57;} 
+.news-hero-nav .news-nav .news-public ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
+.news-hero-nav .news-nav .news-public ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
+.news-hero-nav .news-nav .news-public ul .other a span:last-child{color:#bababa;}
+ /*nesw-match*/
+.news-hero-nav .news-nav .news-match{width:820px;margin-top:25px;display:none;}
+.news-hero-nav .news-nav .news-match.active{display:block;}
+.news-hero-nav .news-nav .news-match ul .first a{display:flex;}
+.news-hero-nav .news-nav .news-match ul .first a img{margin-right:20px;}
+.news-hero-nav .news-nav .news-match ul .first a div h1{font-size:36px;}
+.news-hero-nav .news-nav .news-match ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
+.news-hero-nav .news-nav .news-match ul .other a:hover span:first-child{background:#d1ab57;color:white;}
+.news-hero-nav .news-nav .news-match ul .other a:hover p{color:#d1ab57;} 
+.news-hero-nav .news-nav .news-match ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
+.news-hero-nav .news-nav .news-match ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
+.news-hero-nav .news-nav .news-match ul .other a span:last-child{color:#bababa;}
+ /*news-forum*/
+.news-hero-nav .news-nav .news-forum{width:820px;margin-top:25px;display:none;}
+.news-hero-nav .news-nav .news-forum.active{display:block;}
+.news-hero-nav .news-nav .news-forum ul .first a{display:flex;}
+.news-hero-nav .news-nav .news-forum ul .first a img{margin-right:20px;}
+.news-hero-nav .news-nav .news-forum ul .first a div{}
+.news-hero-nav .news-nav .news-forum ul .first a div h1{font-size:36px;}
+.news-hero-nav .news-nav .news-forum ul .first a div p{font-size:14px;color:#898989;line-height: 1.5;}
+.news-hero-nav .news-nav .news-forum ul .other a{display: flex;width:820px;font-size:16px;line-height:35px;margin:6px 0;}
+.news-hero-nav .news-nav .news-forum ul .other a:hover span:first-child{background:#d1ab57;color:white;}
+.news-hero-nav .news-nav .news-forum ul .other a:hover p{color:#d1ab57;} 
+.news-hero-nav .news-nav .news-forum ul .other a span:first-child{width:68px;display: block;text-align:center;background:#ebebeb;}
+.news-hero-nav .news-nav .news-forum ul .other a p{flex-grow:1;margin-left:20px;color:#555;}
+.news-hero-nav .news-nav .news-forum ul .other a span:last-child{color:#bababa;}
 
-       /*readmore-news*/
-       .news-hero-nav .news-nav .readmore-news{margin-top:25px;}
-       .news-hero-nav .news-nav .readmore-news a{display:block;font-size:16px;text-align:center;width:820px;line-height:45px;background:#f0f0f0;}
-       .news-hero-nav .news-nav .readmore-news a:hover{background:#dad8d8;}
-       .news-hero-nav .news-nav .readmore-news a span{color:#d1ab57;}
+  /*readmore-news*/
+.news-hero-nav .news-nav .readmore-news{margin-top:25px;}
+.news-hero-nav .news-nav .readmore-news a{display:block;font-size:16px;text-align:center;width:820px;line-height:45px;background:#f0f0f0;}
+.news-hero-nav .news-nav .readmore-news a:hover{background:#dad8d8;}
+.news-hero-nav .news-nav .readmore-news a span{color:#d1ab57;}
 
-      /*news-hero-nav的右边*/
-       .news-hero-nav .news-hero{margin-left:20px;width:400px;}
-       .news-hero-nav .news-hero .touch-hero ul{display:flex;width:400px;margin-top:14px;margin-bottom:15px;border-bottom:2px solid #dedede;}
-       .news-hero-nav .news-hero .touch-hero ul li{flex-grow:1;text-align:center;font-size:16px;cursor:pointer;line-height:36px;}
-       .news-hero-nav .news-hero .touch-hero ul li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
-
-
-       .news-hero-nav .news-hero .show-free{display:flex;flex-wrap:wrap;display:none;}
-       .news-hero-nav .news-hero .show-free.active{display:flex;}
-       .news-hero-nav .news-hero .show-free >div:nth-child(2n+1){margin-right:10px;margin-bottom:10px;}
-       .news-hero-nav .news-hero .show-free >p{width:400px;text-align:right;color:rgb(159,159,159)}
-       .news-hero-nav .news-hero .show-free a {display:block;position:relative;height:70px;} 
-       .news-hero-nav .news-hero .show-free a >span{position:absolute;width:100%;height:100%;background:rgba(0,0,0,.7);top:0;left:0;display:flex;justify-content:center;align-items:center;display:none;} 
-       .news-hero-nav .news-hero .show-free a >span >span{color:#d1ab57;font-size:14px;} 
-       .news-hero-nav .news-hero .show-free a:hover >span{display:flex;} 
+  /*news-hero-nav的右边*/
+.news-hero-nav .news-hero{margin-left:20px;width:400px;}
+.news-hero-nav .news-hero .touch-hero ul{display:flex;width:400px;margin-top:14px;margin-bottom:15px;border-bottom:2px solid #dedede;}
+.news-hero-nav .news-hero .touch-hero ul li{flex-grow:1;text-align:center;font-size:16px;cursor:pointer;line-height:36px;}
+.news-hero-nav .news-hero .touch-hero ul li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
 
 
-       .news-hero-nav .news-hero .show-skin{display:flex;flex-wrap:wrap;display:none;}
-       .news-hero-nav .news-hero .show-skin.active{display:flex;}
-       .news-hero-nav .news-hero .show-skin div{margin-bottom:10px;}
-       .news-hero-nav .news-hero .show-skin div:nth-child(2n+2){margin-right:10px;}
-       .news-hero-nav .news-hero .show-skin div a.touch{display:block;height:70px;position:relative;}
-       .news-hero-nav .news-hero .show-skin div a.touch >span{position:absolute;display:flex;width:100%;height:100%;top:0;left:0;justify-content:center;align-items:center;display:none;background:rgba(0,0,0,.7);}
-       .news-hero-nav .news-hero .show-skin div a.touch >span >span{color:#d1ab57;font-size:14px;}
-       .news-hero-nav .news-hero .show-skin div a.touch:hover>span{display:flex;}
-
-       .news-hero-nav .news-hero .show-hero{display:flex;flex-wrap:wrap;display:none;}
-       .news-hero-nav .news-hero .show-hero.active{display:flex;}
-       .news-hero-nav .news-hero .show-hero div{margin-bottom:10px;}
-       .news-hero-nav .news-hero .show-hero div:nth-child(2n+1){margin-right:10px;}
-       .news-hero-nav .news-hero .show-hero div a{display:block;height:70px;position:relative;}
-       .news-hero-nav .news-hero .show-hero div a>span{position:absolute;display:flex;width:100%;height:100%;top:0;left:0;justify-content:center;align-items:center;background:rgba(0,0,0,.7);display:none;}
-       .news-hero-nav .news-hero .show-hero div a>span>span{color:#d1ab57;font-size:14px;}
-       .news-hero-nav .news-hero .show-hero div a:hover>span{display:flex;}
-
-       .news-hero-nav .news-hero .prompt {display:flex;margin-top:25px;}
-       .news-hero-nav .news-hero .prompt i{width:70px;height:70px;display:block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -330px -90px;}
-       .news-hero-nav .news-hero .prompt .words{margin-top:10px;margin-left:10px;}
-       .news-hero-nav .news-hero .prompt .words h5{color:rgb(64,64,64);font-size:14px;}
-       .news-hero-nav .news-hero .prompt .words p{color:#878787;line-height:1.5;}
-
-       .tabs-content-first .recommend{width:1240px;margin-top:55px;}
-       .tabs-content-first .recommend .touch-recommend{display:flex;margin-bottom:20px;border-bottom:2px solid #ededed;}
-       .tabs-content-first .recommend .touch-recommend h3{font-size:26px;color:#404040;font-weight:normal;line-height:50px;margin-right:40px;}
-       .tabs-content-first .recommend .touch-recommend ul{display:flex;margin-top:20px;}
-       .tabs-content-first .recommend .touch-recommend ul li{width:150px;text-align:center;cursor:pointer;font-size:16px;color:#666;}
-       .tabs-content-first .recommend .touch-recommend ul li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
+.news-hero-nav .news-hero .show-free{display:flex;flex-wrap:wrap;display:none;}
+.news-hero-nav .news-hero .show-free.active{display:flex;}
+.news-hero-nav .news-hero .show-free >div:nth-child(2n+1){margin-right:10px;margin-bottom:10px;}
+.news-hero-nav .news-hero .show-free >p{width:400px;text-align:right;color:rgb(159,159,159)}
+.news-hero-nav .news-hero .show-free a {display:block;position:relative;height:70px;} 
+.news-hero-nav .news-hero .show-free a >span{position:absolute;width:100%;height:100%;background:rgba(0,0,0,.7);top:0;left:0;display:flex;justify-content:center;align-items:center;display:none;} 
+.news-hero-nav .news-hero .show-free a >span >span{color:#d1ab57;font-size:14px;} 
+.news-hero-nav .news-hero .show-free a:hover >span{display:flex;} 
 
 
-       .tabs-content-first .recommend .video{display:flex;justify-content:space-between;display:none}
-       .tabs-content-first .recommend .video.active{display:flex;}
-       .tabs-content-first .recommend .video >div{width:190px;position:relative;}
-       .tabs-content-first .recommend .video >div:hover{background:#eee;}
-       .tabs-content-first .recommend .video >div a{display:block;position:relative;}
-       .tabs-content-first .recommend .video >div:hover a h5{color:#d1ab57;}
-       .tabs-content-first .recommend .video >div a i{display:block;width:65px;height:65px;background:transparent url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat;position:absolute;left:50%;transform:translateX(-50%);top:25px;}
-       .tabs-content-first .recommend .video >div img{width:190px;height:110px;margin-bottom:5px;}
-       .tabs-content-first .recommend .video >div a span{display:flex;position:absolute;width:100%;height:70.51%;top:0;left:0;justify-content:center;align-items:center;display:none;background:rgba(0,0,0,.4);} 
-       .tabs-content-first .recommend .video >div h5{font-size:14px;font-weight:normal;color:#555;}
-       .tabs-content-first .recommend .video >div a:hover >span{display:flex;}
+.news-hero-nav .news-hero .show-skin{display:flex;flex-wrap:wrap;display:none;}
+.news-hero-nav .news-hero .show-skin.active{display:flex;}
+.news-hero-nav .news-hero .show-skin div{margin-bottom:10px;}
+.news-hero-nav .news-hero .show-skin div:nth-child(2n+2){margin-right:10px;}
+.news-hero-nav .news-hero .show-skin div a.touch{display:block;height:70px;position:relative;}
+.news-hero-nav .news-hero .show-skin div a.touch >span{position:absolute;display:flex;width:100%;height:100%;top:0;left:0;justify-content:center;align-items:center;display:none;background:rgba(0,0,0,.7);}
+.news-hero-nav .news-hero .show-skin div a.touch >span >span{color:#d1ab57;font-size:14px;}
+.news-hero-nav .news-hero .show-skin div a.touch:hover>span{display:flex;}
+
+.news-hero-nav .news-hero .show-hero{display:flex;flex-wrap:wrap;display:none;}
+.news-hero-nav .news-hero .show-hero.active{display:flex;}
+.news-hero-nav .news-hero .show-hero div{margin-bottom:10px;}
+.news-hero-nav .news-hero .show-hero div:nth-child(2n+1){margin-right:10px;}
+.news-hero-nav .news-hero .show-hero div a{display:block;height:70px;position:relative;}
+.news-hero-nav .news-hero .show-hero div a>span{position:absolute;display:flex;width:100%;height:100%;top:0;left:0;justify-content:center;align-items:center;background:rgba(0,0,0,.7);display:none;}
+.news-hero-nav .news-hero .show-hero div a>span>span{color:#d1ab57;font-size:14px;}
+.news-hero-nav .news-hero .show-hero div a:hover>span{display:flex;}
+
+.news-hero-nav .news-hero .prompt {display:flex;margin-top:25px;}
+.news-hero-nav .news-hero .prompt i{width:70px;height:70px;display:block;background:transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -330px -90px;}
+.news-hero-nav .news-hero .prompt .words{margin-top:10px;margin-left:10px;}
+.news-hero-nav .news-hero .prompt .words h5{color:rgb(64,64,64);font-size:14px;}
+.news-hero-nav .news-hero .prompt .words p{color:#878787;line-height:1.5;}
+
+.tabs-content-first .recommend{width:1240px;margin-top:55px;}
+.tabs-content-first .recommend .touch-recommend{display:flex;margin-bottom:20px;border-bottom:2px solid #ededed;}
+.tabs-content-first .recommend .touch-recommend h3{font-size:26px;color:#404040;font-weight:normal;line-height:50px;margin-right:40px;}
+.tabs-content-first .recommend .touch-recommend ul{display:flex;margin-top:20px;}
+.tabs-content-first .recommend .touch-recommend ul li{width:150px;text-align:center;cursor:pointer;font-size:16px;color:#666;}
+.tabs-content-first .recommend .touch-recommend ul li.active{color:#d1ab57;border-bottom:3px solid #d1ab57;}
 
 
-       .tabs-content-first .recommend .activity{display:flex;justify-content:space-between;display:none;}
-       .tabs-content-first .recommend .activity.active{display:flex;}
-       .tabs-content-first .recommend .activity >div{width:300px;box-shadow:0 4px 4px rgba(0,0,0,.2);padding-bottom:35px;}
-       .tabs-content-first .recommend .activity >div a:hover img{transform:scale(1.08);}
-       .tabs-content-first .recommend .activity >div a{position:relative;display: block;overflow:hidden;}
-       .tabs-content-first .recommend .activity >div a img{width:300px;transition: ease all .8s;}
-       .tabs-content-first .recommend .activity >div a .end{position:absolute;top:5px;right:5px;color:white;background:#c8c8c8;padding:4px 8px;border-radius:26px;}
-       .tabs-content-first .recommend .activity >div a .attention{position:absolute;width:100%;left:0;bottom:0;color:#f8f8f8;background:url(http://ossweb-img.qq.com/images/lol/v2/op60.png);text-align:center;line-height:26px;}
-       .tabs-content-first .recommend .activity >div .words{padding:11px 15px 0;}
-       .tabs-content-first .recommend .activity >div .words p.time{color:#979797;margin:6px 0 10px;}
-       .tabs-content-first .recommend .activity >div .words p.time span{color:#d1ab57;}
-       .tabs-content-first .recommend .activity >div .words p.join {color:#888;}
-       .tabs-content-first .skim-content{width:1240px;margin-top:50px;background:#f0f0f0;line-height:45px;}
-       .tabs-content-first .skim-content a{display: block;text-align:center;font-size:16px;}
-       .tabs-content-first .skim-content a:hover{color:#555;background:#dad8d8;}
-       .tabs-content-first .skim-content a span{color:#d2ab57;}
+.tabs-content-first .recommend .video{display:flex;justify-content:space-between;display:none}
+.tabs-content-first .recommend .video.active{display:flex;}
+.tabs-content-first .recommend .video >div{width:190px;position:relative;}
+.tabs-content-first .recommend .video >div:hover{background:#eee;}
+.tabs-content-first .recommend .video >div a{display:block;position:relative;}
+.tabs-content-first .recommend .video >div:hover a h5{color:#d1ab57;}
+.tabs-content-first .recommend .video >div a i{display:block;width:65px;height:65px;background:transparent url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat;position:absolute;left:50%;transform:translateX(-50%);top:25px;}
+.tabs-content-first .recommend .video >div img{width:190px;height:110px;margin-bottom:5px;}
+.tabs-content-first .recommend .video >div a span{display:flex;position:absolute;width:100%;height:70.51%;top:0;left:0;justify-content:center;align-items:center;display:none;background:rgba(0,0,0,.4);} 
+.tabs-content-first .recommend .video >div h5{font-size:14px;font-weight:normal;color:#555;}
+.tabs-content-first .recommend .video >div a:hover >span{display:flex;}
 
-      /*tabs-content-second,third,fourth*/
-         .tabs-content-second,.tabs-content-third,.tabs-content-fourth{height:200px;font-size:50px;display:flex;justify-content:center;align-items:center;color:red;display:none;}
-         .tabs-content-second.active,.tabs-content-third.active,.tabs-content-fourth.active{display:flex;}
-       /*footbar*/
-       .footbar{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/bg-footer.jpg) no-repeat center top;padding:30px 0;margin-top:70px;}
-       .footbar .foot-inner{width:1240px;margin: 0 auto;display:flex;justify-content:flex-end;}
-       .footbar .foot-inner ul li.url a{color:#568193}
-       .footbar .foot-inner ul li.url span{color:#568193}
-       .footbar .foot-inner ul li.copyright,li.print{color:#415967;}
-       .footbar .foot-inner ul li.numbers{color:#a5a5a5;}
-       .footbar .foot-inner ul li.numbers span,a{color:#415967;}
 
-       /*视频弹窗*/
-       /*.video-wrapper{*/
-           /*width:10000px;height:100000px;background:rgba(0,0,0,.3);position:relative;z-index:3;*/
-       /*}*/
-      .videoWrapper .video-modal{
-         display:flex;justify-content:center;align-items:center;position:fixed;top:0;width:100%;height:100%;z-index:4;background:rgba(0,0,0,.6); display:none;
-       }
-      .videoWrapper .video-modal.active{display:flex;}
-      .videoWrapper .video-modal .video-play{
-          width:900px;height:540px;background:#666;
-      }
-      .videoWrapper .video-modal .close{
-          font-size:80px;color:#d1ab57;position:relative;top:-250px;left:16px;cursor:pointer;
-      }
+.tabs-content-first .recommend .activity{display:flex;justify-content:space-between;display:none;}
+.tabs-content-first .recommend .activity.active{display:flex;}
+.tabs-content-first .recommend .activity >div{width:300px;box-shadow:0 4px 4px rgba(0,0,0,.2);padding-bottom:35px;}
+.tabs-content-first .recommend .activity >div a:hover img{transform:scale(1.08);}
+.tabs-content-first .recommend .activity >div a{position:relative;display: block;overflow:hidden;}
+.tabs-content-first .recommend .activity >div a img{width:300px;transition: ease all .8s;}
+.tabs-content-first .recommend .activity >div a .end{position:absolute;top:5px;right:5px;color:white;background:#c8c8c8;padding:4px 8px;border-radius:26px;}
+.tabs-content-first .recommend .activity >div a .attention{position:absolute;width:100%;left:0;bottom:0;color:#f8f8f8;background:url(http://ossweb-img.qq.com/images/lol/v2/op60.png);text-align:center;line-height:26px;}
+.tabs-content-first .recommend .activity >div .words{padding:11px 15px 0;}
+.tabs-content-first .recommend .activity >div .words p.time{color:#979797;margin:6px 0 10px;}
+.tabs-content-first .recommend .activity >div .words p.time span{color:#d1ab57;}
+.tabs-content-first .recommend .activity >div .words p.join {color:#888;}
+.tabs-content-first .skim-content{width:1240px;margin-top:50px;background:#f0f0f0;line-height:45px;}
+.tabs-content-first .skim-content a{display: block;text-align:center;font-size:16px;}
+.tabs-content-first .skim-content a:hover{color:#555;background:#dad8d8;}
+.tabs-content-first .skim-content a span{color:#d2ab57;}
+
+   /*tabs-content-second,third,fourth*/
+  .tabs-content-second,.tabs-content-third,.tabs-content-fourth{height:200px;font-size:50px;display:flex;justify-content:center;align-items:center;color:red;display:none;}
+  .tabs-content-second.active,.tabs-content-third.active,.tabs-content-fourth.active{display:flex;}
+   /*footbar*/
+.footbar{background:transparent url(http://ossweb-img.qq.com/images/lol/v2/bg-footer.jpg) no-repeat center top;padding:30px 0;margin-top:70px;}
+.footbar .foot-inner{width:1240px;margin: 0 auto;display:flex;justify-content:flex-end;}
+.footbar .foot-inner ul li.url a{color:#568193}
+.footbar .foot-inner ul li.url span{color:#568193}
+.footbar .foot-inner ul li.copyright,li.print{color:#415967;}
+.footbar .foot-inner ul li.numbers{color:#a5a5a5;}
+.footbar .foot-inner ul li.numbers span,a{color:#415967;}
+
+  /*视频弹窗*/
+  /*.video-wrapper{*/
+      /*width:10000px;height:100000px;background:rgba(0,0,0,.3);position:relative;z-index:3;*/
+  /*}*/
+ .videoWrapper .video-modal{
+   display:flex;justify-content:center;align-items:center;position:fixed;top:0;width:100%;height:100%;z-index:4;background:rgba(0,0,0,.6); display:none;
+ }
+.videoWrapper .video-modal.active{display:flex;}
+.videoWrapper .video-modal .video-play{
+    width:900px;height:540px;background:#666;
+}
+.videoWrapper .video-modal .close{
+    font-size:80px;color:#d1ab57;position:relative;top:-250px;left:16px;cursor:pointer;
+}
