@@ -65,10 +65,10 @@ $('.recommend .touch-recommend>ul').on('mouseenter','li',function(e){
 //定
 $(window).on('scroll',function(){
     let topY = $(window).scrollTop()
-   // let fixed = document.querySelector('.tabs-name-wrapper')
-   // let Y = fixed.getBoundingClientRect().top
-   //经侧Y=500
-    if(topY <= 500){
+//    let fixed = document.querySelector('.tabs-name-wrapper')
+//    let Y = fixed.getBoundingClientRect().top
+   //经侧Y=437.1
+    if(topY <= 437.1){
      $('.menu-content .tabs-name-wrapper').removeClass('sticky')
     }else{
      $('.menu-content .tabs-name-wrapper').addClass('sticky')
