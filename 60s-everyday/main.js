@@ -9,5 +9,5 @@ $('.container .play').on('click', function(e) {
      $line.addClass('active')
   }
   let number = 0
-  $('.start-time').text(number)
+  // $('.start-time').text(number)
 })
