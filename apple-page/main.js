@@ -32,6 +32,8 @@ setInterval(function () {
     }
     //如果click事件被触发，那么自动播放下一张图片的位置会被改变
    if(array.index !== undefined){nextcurrent = array.index + 1} 
+    //若被点击了最后一张，让下一次可以跳到第一张
+    if(nextcurrent === 4){nextcurrent = 0}
     go(nextcurrent)
     current = nextcurrent
     //nextcurrent已经被改变了，array.index的值就没有存在意义，同时它还会影响下一次的setInterval,所以让它继续存储下一次被点击的‘li’的index值
