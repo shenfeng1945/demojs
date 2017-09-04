@@ -8,6 +8,9 @@ p{
   font-size:0.05333rem;
   font-weight:bold;
 }
+img{
+  width: 0.0375rem;
+}
 canvas{
   /*border: 2px solid green;*/
   position: absolute;
