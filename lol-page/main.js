@@ -20,7 +20,10 @@ setInterval(function(){
     let nextcurrent = current +1
     if(nextcurrent === 5){nextcurrent=0}
     //如果mouseenter被触发，改变下一张图片播放的位置
-    if(array.index !== undefined){nextcurrent = array.index + 1}
+    if(array.index !== undefined){
+        if(array.index === 4){array.index = -1}
+        nextcurrent = array.index + 1
+    }
     go(nextcurrent)
     current = nextcurrent
     //消除3s后的setInterval影响,同时再次去储存mouseenter里的index值
