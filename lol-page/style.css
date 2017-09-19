@@ -34,7 +34,7 @@ a{color:black;text-decoration:none;}
 .topbar .userNavigation .avatar>img{position:relative;z-index:-1;border-radius:50%;}
 .topbar .userNavigation .text{padding-top:18px;}
 .topbar .userNavigation .text p{font-size:16px;}
-.topbar .userNavigation .text small{font-size:12px;}
+.topbar .userNavigation .text small{font-size:12px;color:#999;}
 .topbar .userNavigation .user-popover{position:absolute;width:100%;top:100%;left:0;display:none;;background:rgba(27,27,27,.9);text-align:center;padding-top:20px;}
 .topbar .userNavigation:hover .user-popover{display:block;}
 .topbar .userNavigation .user-popover>p{font-size:14px;padding:10px 30px 30px 30px;color:#868686;}
